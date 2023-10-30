@@ -8,6 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/pooulad/go-book-management/pkg/models"
+	"github.com/pooulad/go-book-management/pkg/utils"
 )
 
 var NewBook models.Book
@@ -33,6 +34,17 @@ func GetBookById(w http.ResponseWriter, r *http.Request) {
 	res, _ := json.Marshal(bookDetails)
 
 	w.Header().Set("Content-type", "application/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
+}
+
+func CreateBook(w http.ResponseWriter, r *http.Request) {
+	CreateBookStruct := &models.Book{}
+	utils.ParsBody(r, CreateBookStruct)
+
+	b := CreateBookStruct.CreateBook()
+	res, _ := json.Marshal(b)
+
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
 }
