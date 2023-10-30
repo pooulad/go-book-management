@@ -7,3 +7,5 @@ import (
 	"github.com/pooulad/go-book-management/pkg/models"
 )
 
+var NewBook models.Book
+
