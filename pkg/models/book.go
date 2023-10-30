@@ -20,3 +20,10 @@ func init() {
 	db = config.GetDB()
 	db.AutoMigrate(&Book{})
 }
+
+func (b *Book) CreateBook() *Book {
+	db.Create(&b)
+	return b
+}
+
+func (b *Book) GetAllBooks() []Book {
