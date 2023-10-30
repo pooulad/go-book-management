@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -14,7 +15,8 @@ func main() {
 	routes.RegisterBoostoreRoutes(r)
 	r.Handle("/", r)
 
-	err := http.ListenAndServe(os.Getenv("PROJECT_HOST"), r)
+	hostAddress := fmt.Sprintf("%s:%s", os.Getenv("PROJECT_HOST"), os.Getenv("PROJECT_PORT"))
+	err := http.ListenAndServe(hostAddress, r)
 	if err != nil {
 		log.Fatal(err)
 	}
