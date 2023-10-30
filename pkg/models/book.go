@@ -14,9 +14,9 @@ type Book struct {
 	Publication string `gorm:"" json:"publication"`
 }
 
-func init(){
+func init() {
 	config.Connect()
-	
+
 	db = config.GetDB()
 	db.AutoMigrate(&Book{})
 }
