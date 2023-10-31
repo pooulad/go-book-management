@@ -1,4 +1,6 @@
 # go-book-management
+This is an exercise example for teaching and working with web servers.
+just enjoy programming :) 
 ![maxresdefault](https://github.com/pooulad/go-book-management/assets/86445458/45e00ac9-69dd-4835-bd38-4e2d6015b496)
 
 ## API Reference
