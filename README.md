@@ -31,7 +31,7 @@ just enjoy programming :)
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `bookId`      | `string` | **Required**. Id of item to fetch |
 
 #### Delete Book
 
@@ -41,7 +41,7 @@ just enjoy programming :)
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `bookId`      | `string` | **Required**. Id of item to fetch |
 
 
 
@@ -53,7 +53,7 @@ just enjoy programming :)
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `bookId`      | `string` | **Required**. Id of item to fetch |
 
 
 
