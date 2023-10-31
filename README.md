@@ -14,9 +14,11 @@
   POST /book/
 ```
 ```json
-  {
-    ""
-  }
+{
+	"name": "mahdi",
+	"author": "pooulad",
+	"publication": "31/10//2023"
+}
 ```
 
 #### Get Book
